@@ -32,8 +32,8 @@ var app = {
 		document.getElementById("stop").addEventListener("click", stop);
 		function start() {
 			 alert("Start");
-			 var configFile = 'liveinput_android.conf'
-			 var filename = 'audio-opensmile.bin'
+			 var configFile = 'raw_audio_bin.conf'
+			 var filename = 'audio-opensmile.wav' // 16 kHz, 16 bit signed int raw audio file
 			 opensmile.start(filename, configFile, success, failure);
 		}
 		function stop() {
